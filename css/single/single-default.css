@@ -2217,3 +2217,7 @@ input.form-control-custom:last-child {
 .gallery-icon > *:not(:first-child) {
   margin-left: 5px;
 }
+
+.paraHeading{
+  color: var(--color-primary);
+}
