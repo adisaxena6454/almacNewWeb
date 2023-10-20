@@ -12791,16 +12791,29 @@ h-2 {
 background-color: var(--color-primary-Transparent);
 margin-bottom: 5px!important;
 }
+
+.menu-item-toggle-Wrapper_inner{
+    display: flex;
+    flex-direction: column;
+}
 .menu-item-toggle-Wrapper_inner p{
     padding: 5px 0px;
     transition: 0.2s;
     cursor:default; 
     padding-left: 20px;
+    font-size: 14px!important;
 }
 .menu-item-toggle-Wrapper_inner p:hover{
     margin-left: 10px;
  }
- .collapse_menu_wrapper .collapse-content p{
+ .collapse-content {
+    display: flex;
+    flex-direction: column;
+ }
+ .collapse_menu_wrapper .collapse-content a{
+font-size: 14px;
+ }
+ .collapse_menu_wrapper .collapse-content p {
  padding: 5px 0px;
  transition: 0.2s;
  cursor:default;

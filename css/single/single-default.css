@@ -2221,3 +2221,9 @@ input.form-control-custom:last-child {
 .paraHeading{
   color: var(--color-primary);
 }
+#swiperHeading{
+  color: var(--color-primary);
+  font-size: 29px;
+  text-align: center;
+  margin-top: 20px;
+}

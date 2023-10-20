@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Mirrored from bk-ninja.com/html_templates/interi/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 May 2023 08:27:16 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <!-- Basic -->
+    <meta charset="UTF-8" />
+    <title>ALMAC</title>
+    <meta name="keywords" content="HTML5 News Magazine Template" />
+    <meta name="description" content="Infini - Ultimate News and Magazine Template" />
+    <meta name="author" content="designuptodate.com" />
+    <!-- Jquery css -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="img/favicon.ico" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
+    <meta name="msapplication-TileImage" content="img/favicon.ico" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @import url("css/atbs-style.css");
+        @import url("css/module/header.css");
+        @import url("css/module/footer.css");
+        @import url("css/module/heading-title.css");
+        @import url("css/module/atbs-featured-module-1.css");
+        @import url("css/module/atbs-featured-module-2.css");
+        @import url("css/module/atbs-featured-module-3.css");
+        @import url("css/module/atbs-featured-module-4.css");
+        @import url("css/module/atbs-featured-module-5.css");
+        @import url("css/module/atbs-featured-module-6.css");
+        @import url("css/module/atbs-featured-module-7.css");
+        @import url("css/module/atbs-posts-listing--grid-1.css");
+        @import url("css/module/atbs-posts-listing--grid-2.css");
+        @import url("css/module/atbs-posts-listing--grid-3.css");
+        @import url("css/module/service.css");
+        @import url("css/module/author.css");
+        @import url("css/module/search.css");
+        @import url("css/module/gallery.css");
+        @import url("css/module / 404.css");
+        @import url("css/module/atbs-widget.css");
+        @import url("css/single.css");
+        @import url("css/color.css");
+        @import url("css/font.css");
+
+        html,
+        body {
+            position: relative;
+            height: 99%;
+        }
+
+        body {
+            background: black;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+
+        .swiper-pagination-horizontal{
+            background: blue!important;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+       
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- .site-wrapper -->
+    <div class="site-wrapper">
+        <!-- <img src="../img/ModulerKitchen/Lshaped/1.jpg" /> -->
+        <div id="sidebar"></div>
+        <!-- Site header -->
+        <div class="site-content">
+            <h1 id="swiperHeading">as</h1>
+            <swiper-container class="mySwiper" id="mySwiper"" pagination=" true" effect="coverflow" grab-cursor="true"
+                centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+                coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+
+            </swiper-container>
+        </div>
+        <!-- .site-content -->
+        <div id="footer"></div>
+    </div>
+    <!-- .site-wrapper -->
+
+    <script src="js/owl-carousel.min.js.pagespeed.jm.CUaR_y7pym.js"></script>
+
+    <script>
+        let copyRightYearElem = document.getElementById("copyRightYear");
+        const date = new Date();
+        copyRightYearElem.innerText = date.getFullYear();
+
+    </script>
+
+    <!-- //script for loading footer and navbar -->
+    <script>
+        $(function () {
+            $("#footer").load("Footer.html");
+            $("#sidebar").load("Sidebar.html");
+        });
+    </script>
+
+    <!-- swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script>
+        let swiperWrapper = document.getElementById("mySwiper");
+        let swiperHeading = document.getElementById("swiperHeading");
+        let fullUrl = window.location.href;
+        let selectedCatogary = "";
+   
+        let swiperHeadingText = "";
+     
+        let mk_L_SHAPED_Images = [
+            "../img/ModulerKitchen/Lshaped/1.jpg",
+            "../img/ModulerKitchen/Lshaped/2.jpg",
+            "../img/ModulerKitchen/Lshaped/3.jpg",
+            "../img/ModulerKitchen/Lshaped/4.jpg",
+            "../img/ModulerKitchen/Lshaped/5.jpg",
+        ]
+
+        let mk_G_SHAPED_Images = [
+                "../img/ModulerKitchen/Gshaped/1.jpg",
+                "../img/ModulerKitchen/Gshaped/2.jpg",
+                "../img/ModulerKitchen/Gshaped/3.jpg",
+                "../img/ModulerKitchen/Gshaped/4.jpg",
+                "../img/ModulerKitchen/Gshaped/5.jpg",
+            ]
+
+            let mk_U_SHAPED_Images = [
+                "../img/ModulerKitchen/Ushaped/1.jpg",
+                "../img/ModulerKitchen/Ushaped/2.jpg",
+                "../img/ModulerKitchen/Ushaped/3.jpg",
+                "../img/ModulerKitchen/Ushaped/4.jpg",
+                "../img/ModulerKitchen/Ushaped/5.jpg",
+            ]
+
+        let mk_Island_Shaped_Images = [
+            "../img/ModulerKitchen/IslandShaped/1.jpg",
+            "../img/ModulerKitchen/IslandShaped/2.jpg",
+            "../img/ModulerKitchen/IslandShaped/3.jpg",
+            "../img/ModulerKitchen/IslandShaped/4.jpg",
+            "../img/ModulerKitchen/IslandShaped/5.jpg",
+        ]
+
+       
+
+        let mk_SINGLE_WALL_Images = [
+            "../img/ModulerKitchen/SingleWall/1.jpg",
+            "../img/ModulerKitchen/SingleWall/2.jpg",
+            "../img/ModulerKitchen/SingleWall/3.jpg",
+            "../img/ModulerKitchen/SingleWall/4.jpg",
+            "../img/ModulerKitchen/SingleWall/5.jpg",
+        ]
+
+        let mk_PARALLEL_MODULAR_Images = [
+            "../img/ModulerKitchen/Parallel/1.jpg",
+            "../img/ModulerKitchen/Parallel/2.jpg",
+            "../img/ModulerKitchen/Parallel/3.jpg",
+            "../img/ModulerKitchen/Parallel/4.jpg",
+            "../img/ModulerKitchen/Parallel/5.jpg",
+        ]
+
+        let fd_LCD_Images = [
+            "../img/FunitureDesign/LCD/1.jpg",
+            "../img/FunitureDesign/LCD/2.jpg",
+            "../img/FunitureDesign/LCD/3.jpg",
+            "../img/FunitureDesign/LCD/4.jpg",
+            "../img/FunitureDesign/LCD/5.jpg",
+        ]
+
+        let fd_BATHROOM_Images = [
+            "../img/FunitureDesign/BathRoom/1.jpg",
+            "../img/FunitureDesign/BathRoom/2.jpg",
+            "../img/FunitureDesign/BathRoom/3.jpg",
+            "../img/FunitureDesign/BathRoom/4.jpg",
+            "../img/FunitureDesign/BathRoom/5.jpg",
+        ]
+
+        let fd_BED_Images = [
+            "../img/FunitureDesign/BEDDESIGN/1.jpg",
+            "../img/FunitureDesign/BEDDESIGN/2.jpg",
+            "../img/FunitureDesign/BEDDESIGN/3.jpg",
+            "../img/FunitureDesign/BEDDESIGN/4.jpg",
+            "../img/FunitureDesign/BEDDESIGN/5.jpg",
+        ]
+
+        let fd_SOFA_Images = [
+            "../img/FunitureDesign/SofaSet/1.jpg",
+            "../img/FunitureDesign/SofaSet/2.jpg",
+            "../img/FunitureDesign/SofaSet/3.jpg",
+            "../img/FunitureDesign/SofaSet/4.jpg",
+            "../img/FunitureDesign/SofaSet/5.jpg",
+        ]
+
+        let fd_DINING_Images = [
+            "../img/FunitureDesign/Dine/1.jpg",
+            "../img/FunitureDesign/Dine/2.jpg",
+            "../img/FunitureDesign/Dine/3.jpg",
+            "../img/FunitureDesign/Dine/4.jpg",
+            "../img/FunitureDesign/Dine/5.jpg",
+        ]
+
+
+        let fd_STUDY_Images = [
+            "../img/FunitureDesign/Study/1.jpg",
+            "../img/FunitureDesign/Study/2.jpg",
+            "../img/FunitureDesign/Study/3.jpg",
+            "../img/FunitureDesign/Study/4.jpg",
+            "../img/FunitureDesign/Study/5.jpg",
+        ]
+
+        let crockery_U_D_Images = [
+            "../img/WARDROBE_DESIGN/CROCKERY_UNIT_DESIGNS/1.jpg",
+            "../img/WARDROBE_DESIGN/CROCKERY_UNIT_DESIGNS/2.jpg",
+            "../img/WARDROBE_DESIGN/CROCKERY_UNIT_DESIGNS/3.jpg",
+            "../img/WARDROBE_DESIGN/CROCKERY_UNIT_DESIGNS/4.jpg",
+            "../img/WARDROBE_DESIGN/CROCKERY_UNIT_DESIGNS/5.jpg",
+        ]
+
+        let finalisedUrl = fullUrl.split("designType=")[1];
+        if (finalisedUrl === "crockery_U_D") {
+            selectedCatogary = crockery_U_D_Images
+            swiperHeadingText = "CROCKERY UNIT DESIGNS"
+        }
+        else if (finalisedUrl === "mk_L_SHAPED") {
+            selectedCatogary = mk_L_SHAPED_Images
+            swiperHeadingText = "L-SHAPED MODULAR KITCHEN DESIGNS"
+        } else if (finalisedUrl === "mk_G_SHAPED") {
+            selectedCatogary = mk_G_SHAPED_Images
+            swiperHeadingText = "G-SHAPED MODULAR KITCHEN"
+        } else if (finalisedUrl === "mk_ISLAND_KITCHEN") {
+            selectedCatogary = mk_Island_Shaped_Images
+            swiperHeadingText = "ISLAND KITCHEN DESIGN"
+        }
+        else if (finalisedUrl === "mk_SINGLE_WALL") {
+            selectedCatogary = mk_SINGLE_WALL_Images
+            swiperHeadingText = "SINGLE WALL MODULAR KITCHEN"
+        }else if (finalisedUrl === "mk_U_SHAPED") {
+            selectedCatogary = mk_U_SHAPED_Images
+            swiperHeadingText = "U-SHAPED MODULAR KITCHEN"
+        }else if (finalisedUrl === "mk_PARALLEL_MODULAR") {
+            selectedCatogary = mk_PARALLEL_MODULAR_Images
+            swiperHeadingText = "PARALLEL MODULAR KITCHEN"
+        }else if (finalisedUrl === "fd_LCD") {
+            selectedCatogary = fd_LCD_Images
+            swiperHeadingText = "LCD PANEL DESIGNS"
+        }else if (finalisedUrl === "fd_BATHROOM") {
+            selectedCatogary = fd_BATHROOM_Images
+            swiperHeadingText = "BATHROOM VANITY DESIGN MANUFACTURER"
+        }else if (finalisedUrl === "fd_BED") {
+            selectedCatogary = fd_BED_Images
+            swiperHeadingText = "BED DESIGNS"
+        }else if (finalisedUrl === "fd_SOFA") {
+            selectedCatogary = fd_SOFA_Images
+            swiperHeadingText = "SOFA SET DESIGN"
+        }else if (finalisedUrl === "fd_DINING") {
+            selectedCatogary = fd_DINING_Images
+            swiperHeadingText = "DINING TABLE SET"
+        }else if (finalisedUrl === "fd_STUDY") {
+            selectedCatogary = fd_STUDY_Images
+            swiperHeadingText = "STUDY TABLE DESIGN"
+        }
+
+        swiperHeading.innerHTML = swiperHeadingText;
+
+        for (let i = 0; i < selectedCatogary.length; i++) {
+            swiperWrapper.innerHTML += `<swiper-slide>
+          <img  src='${selectedCatogary[i]}'/>
+        </swiper-slide>`
+        }
+    </script>
+
+</body>
+
+</html>
