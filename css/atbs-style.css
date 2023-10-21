@@ -950,6 +950,7 @@ ol {
 ============================================================================= */
 .site-wrapper {
     overflow: hidden;
+    background: black;
 }
 
 .site-content {
@@ -12834,17 +12835,31 @@ font-size: 14px;
  }
  .menu-item:hover > .menu-item-toggle-Wrapper {
     max-height: 1000px;
-            transition: max-height 0.4s ease-in;
+        transition: max-height 0.4s ease-in;
  }
 
  .page-heading{
-    font-size: 21px ;
+    font-size: 25px ;
+    color: var(--color-primary)!important;
  }
+
  .page-wrapper{
-    width: 500px;
+    width: 60%;
     margin: auto;
  }
+
  .photoGalleryImage{
    width: 600px;
     height: 395px;
+ }
+
+ #swiper-details-para{
+    background-color: black;
+    color: white;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    
  }
