@@ -78,8 +78,9 @@
         swiper-slide {
             background-position: center;
             background-size: cover;
-            width: 300px;
-            height: 300px;
+            width: 600px;
+          border: 2px solid white;  
+            height: 400px;
         }
 
         .swiper-pagination-horizontal{
@@ -298,7 +299,7 @@
 
         for (let i = 0; i < selectedCatogary.length; i++) {
             swiperWrapper.innerHTML += `<swiper-slide>
-          <img  src='${selectedCatogary[i]}'/>
+          <img class="photoGalleryImage"  src='${selectedCatogary[i]}'/>
         </swiper-slide>`
         }
     </script>

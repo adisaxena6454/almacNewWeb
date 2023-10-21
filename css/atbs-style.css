@@ -12837,10 +12837,14 @@ font-size: 14px;
             transition: max-height 0.4s ease-in;
  }
 
- .privacy-policy-heading{
+ .page-heading{
     font-size: 21px ;
  }
- .privacy-policy-wrapper{
+ .page-wrapper{
     width: 500px;
     margin: auto;
+ }
+ .photoGalleryImage{
+   width: 600px;
+    height: 395px;
  }
