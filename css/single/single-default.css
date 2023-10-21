@@ -41,9 +41,32 @@ body {
     }
 }
 
-
+.section_03_steps_sec1{
+  background: url("../../img/Planning/Planning.jpg");
+}
+.section_03_steps_sec2{
+  background: url("../../img/Planning/budgetPlan.jpg");
+}
+.section_03_steps_sec3{
+  background: url("../../img/Planning/design.jpg");
+}
+.section_03_steps_sec4{
+  background: url("../../img/Planning/delivery.jpg");
+}
+.section_03_steps_sec5{
+  background: url("../../img/Planning/site.jpg");
+}
+.section_03_steps_sec6{
+  background: url("../../img/Planning/install.jpg");
+}
+.section_03_steps_sec7{
+  background: url("../../img/Planning/plumbing.jpg");
+}
+.section_03_steps_sec8{
+  background: url("../../img/Planning/final.jpg");
+}
 .section_03_steps_sec{
-    background: url("https://demo2.themelexus.com/kitchor/wp-content/uploads/2023/04/H9-img-1.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
   height: 500px;

@@ -12836,3 +12836,11 @@ font-size: 14px;
     max-height: 1000px;
             transition: max-height 0.4s ease-in;
  }
+
+ .privacy-policy-heading{
+    font-size: 21px ;
+ }
+ .privacy-policy-wrapper{
+    width: 500px;
+    margin: auto;
+ }
