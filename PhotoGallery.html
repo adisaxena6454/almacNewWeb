@@ -101,7 +101,7 @@
 <body>
     <!-- .site-wrapper -->
     <div class="site-wrapper">
-        <!-- <img src="../img/ModulerKitchen/Lshaped/1.jpg" /> -->
+        <!-- <img src="./Data/DesignGallaryTextFiles/lShaped.txt" /> -->
         <div id="sidebar"></div>
         <!-- Site header -->
         <div class="site-content">
@@ -148,7 +148,7 @@
         let selectedCatogary = "";
    
         let swiperHeadingText = "";
-        let swiperDetailsParaText = "";
+        
      
         let mk_L_SHAPED_Images = [
             "../img/ModulerKitchen/Lshaped/1.jpg",
@@ -256,87 +256,187 @@
             "../img/WARDROBE_DESIGN/CROCKERY_UNIT_DESIGNS/4.jpg",
             "../img/WARDROBE_DESIGN/CROCKERY_UNIT_DESIGNS/5.jpg",
         ]
+        let interior_Designs_Images = [
+        "../img/InteriorDesign/ArtificialGrass.jpg",
+            "../img/InteriorDesign/Bathroom.jpg",
+            "../img/InteriorDesign/blind.jpg",
+            "../img/InteriorDesign/Carpet.jpg",
+            "../img/InteriorDesign/fallCeling.jpg",
+            "../img/InteriorDesign/pvc.jpg",
+            "../img/InteriorDesign/rod.jpg",
+            "../img/InteriorDesign/VynlFloor.jpg",
+            "../img/InteriorDesign/fallCeling.jpg",
+            "../img/InteriorDesign/WoodenFloor.jpg",
+            "../img/InteriorDesign/wallPapper.jpg",
+        ]
+
+
+
+
+
 
 
         const swiperAllDeisgnDetails = [
-            `Designing an L-shaped modular kitchen is a popular choice for many homeowners as it offers a functional and space-efficient layout. This design maximizes the use of corner space and allows for efficient workflow in the kitchen. Here are some key elements and tips for creating an L-shaped modular kitchen:
-
-1. Layout: The L-shaped kitchen layout consists of two adjacent walls forming an L shape. One wall typically houses the cooking range, oven, and other appliances, while the other wall accommodates the sink, dishwasher, and preparation area. The corner is often used for storage.
-
-2. Cabinets and Storage: Utilize the wall space effectively by installing cabinets and drawers for storage. You can opt for both upper and lower cabinets. Consider using pull-out or pull-down mechanisms for easy access to items in the lower cabinets, especially in the corner area. A corner carousel or pull-out unit can help maximize storage in the corner space.
-
-3. Countertops: Select durable and easy-to-clean countertop materials. Granite, quartz, or solid surface materials are popular choices. Ensure there is ample counter space for food prep, and consider adding a breakfast bar or island if you have the room.
-
-4. Appliance Placement: Position your appliances strategically. Place the refrigerator and pantry, if available, on one end of the "L," and the cooking range and oven on the other. The sink should be centrally located, providing a convenient and efficient work triangle.
-
-5. Sink and Faucet: Choose a deep, functional sink with a good-quality faucet. A pull-out or pull-down faucet is convenient for tasks like washing dishes. Consider installing an under-counter water filter for easy access to filtered water.
-
-6. Lighting: Proper lighting is essential in the kitchen. Install under-cabinet task lighting for the countertop workspace and pendant lights above the island or breakfast bar. Natural light is also important, so if possible, incorporate a window or skylight.
-
-7. Ventilation: A good ventilation system is crucial to keep the kitchen air clean and free of cooking odors. Install a range hood or an over-the-range microwave with a built-in vent.
-
-8. Color and Design: Choose a color scheme and design that matches your style and complements the rest of your home. Lighter colors can make a small kitchen feel more open and spacious.
-
-9. Flooring: Select flooring that is easy to clean and durable. Tiles, laminate, or hardwood are common choices. Consider a non-slip option for safety.
-
-10. Personalization: Make the kitchen your own with personal touches. Add open shelves for displaying dishes, cookbooks, or decorative items. Decorate with plants, artwork, or your preferred kitchen accessories.
-
-11. Organizational Accessories: Invest in kitchen organizers and accessories like pull-out pantry shelves, utensil dividers, and spice racks to keep the kitchen well-organized.
-
-12. Maintenance: Keep in mind that a modular kitchen requires regular maintenance. Follow the manufacturer's recommendations for care and cleaning of cabinets, countertops, and appliances.
-
-When designing an L-shaped modular kitchen, consider your specific needs, preferences, and available space to create a functional and aesthetically pleasing kitchen that suits your lifestyle.`,
-
+           "./Data/DesignGallaryTextFiles/lShaped.txt",
+           "./Data/DesignGallaryTextFiles/A G-shaped modular kitchen, sometim.txt",
+           "./Data/DesignGallaryTextFiles/A false ceiling, also known as a dr.txt",
+           "./Data/DesignGallaryTextFiles/A parallel modular kitchen, also kn.txt",
+           "./Data/DesignGallaryTextFiles/A single wall modular kitchen, also.txt",
+           "./Data/DesignGallaryTextFiles/A study table is an essential piece.txt",
+           "./Data/DesignGallaryTextFiles/A U-shaped modular kitchen is a hig.txt",
+           "./Data/DesignGallaryTextFiles/Artificial grass, often referred to.txt",
+           "./Data/DesignGallaryTextFiles/Bed designs come in various styles .txt",
+           "./Data/DesignGallaryTextFiles/Carpet is a versatile and popular f.txt",
+           "./Data/DesignGallaryTextFiles/Curtain rods are essential componen.txt",
+           "./Data/DesignGallaryTextFiles/Designing a bathroom involves creat.txt",
+           "./Data/DesignGallaryTextFiles/Designing a crockery unit involves .txt",
+           "./Data/DesignGallaryTextFiles/Designing an LCD panel or TV wall u.txt",
+           "./Data/DesignGallaryTextFiles/Dining table sets come in a wide ra.txt",
+           "./Data/DesignGallaryTextFiles/Sofa sets come in a wide variety of.txt",
+           "./Data/DesignGallaryTextFiles/uPVC (unplasticized polyvinyl chlor.txt",
+           "./Data/DesignGallaryTextFiles/Vinyl flooring is a versatile and p.txt",
+           "./Data/DesignGallaryTextFiles/Wallpaper is a versatile and decora.txt",
+           "./Data/DesignGallaryTextFiles/When looking for bathroom vanity de.txt",
+           "./Data/DesignGallaryTextFiles/Window blinds are a popular window.txt",
+           "./Data/DesignGallaryTextFiles/Wooden flooring is a popular choice.txt"
         ]
 
+          
         let finalisedUrl = fullUrl.split("designType=")[1];
-        if (finalisedUrl === "crockery_U_D") {
+        let swiperDetailsTextPath;
+
+        if (finalisedUrl === "int_D_WOODEN") {
+            selectedCatogary = [interior_Designs_Images[9]]
+            swiperHeadingText = "WOODEN FLOORING"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[21];
+        }
+        else if (finalisedUrl === "int_D_CARPET") {
+            selectedCatogary = [interior_Designs_Images[3]]
+            swiperHeadingText = "CARPET"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[9];
+        }
+        else if (finalisedUrl === "int_D_VINYL") {
+            selectedCatogary = [interior_Designs_Images[7]]
+            swiperHeadingText = "VINYL FLOORING"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[17];
+        }
+        else if (finalisedUrl === "int_D_ARTIFICIAL") {
+            selectedCatogary = [interior_Designs_Images[0]]
+            swiperHeadingText = "ARTIFICIAL GRASS"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[7];
+        }
+        else if (finalisedUrl === "int_D_WINDOWS") {
+            selectedCatogary = [interior_Designs_Images[2]]
+            swiperHeadingText = "WINDOWS BLINDS"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[20];
+        }
+        else if (finalisedUrl === "int_D_CURTAIN") {
+            selectedCatogary = [interior_Designs_Images[6]]
+            swiperHeadingText = "CURTAIN RODS"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[10];
+        }
+        else if (finalisedUrl === "int_D_uPVC") {
+            selectedCatogary = [interior_Designs_Images[5]]
+            swiperHeadingText = "uPVC DOOR – WINDOWS"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[16];
+        }
+        else if (finalisedUrl === "int_D_WALLPAPER") {
+            selectedCatogary = [interior_Designs_Images[10]]
+            swiperHeadingText = "WALLPAPER DESIGN"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[18];
+        }
+        else if (finalisedUrl === "int_D_FALSE") {
+            selectedCatogary = [interior_Designs_Images[4]]
+            swiperHeadingText = "FALSE CEILING DESIGN"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[2];
+        }
+        else if (finalisedUrl === "int_D_BATHROOM") {
+            selectedCatogary = [interior_Designs_Images[1]]
+            swiperHeadingText = "BATHROOM DESIGN"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[11];
+        }  
+        else if (finalisedUrl === "crockery_U_D") {
             selectedCatogary = crockery_U_D_Images
             swiperHeadingText = "CROCKERY UNIT DESIGNS"
-            
+            swiperDetailsTextPath = swiperAllDeisgnDetails[12];
         }
         else if (finalisedUrl === "mk_L_SHAPED") {
             selectedCatogary = mk_L_SHAPED_Images
             swiperHeadingText = "L-SHAPED MODULAR KITCHEN DESIGNS"
-            swiperDetailsParaText = swiperAllDeisgnDetails[0]
-        } else if (finalisedUrl === "mk_G_SHAPED") {
+            swiperDetailsTextPath = swiperAllDeisgnDetails[0];
+        } 
+        else if (finalisedUrl === "mk_G_SHAPED") {
             selectedCatogary = mk_G_SHAPED_Images
             swiperHeadingText = "G-SHAPED MODULAR KITCHEN"
-        } else if (finalisedUrl === "mk_ISLAND_KITCHEN") {
+            swiperDetailsTextPath = swiperAllDeisgnDetails[1];
+        }
+         else if (finalisedUrl === "mk_ISLAND_KITCHEN") {
             selectedCatogary = mk_Island_Shaped_Images
             swiperHeadingText = "ISLAND KITCHEN DESIGN"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[1];
         }
         else if (finalisedUrl === "mk_SINGLE_WALL") {
             selectedCatogary = mk_SINGLE_WALL_Images
             swiperHeadingText = "SINGLE WALL MODULAR KITCHEN"
-        }else if (finalisedUrl === "mk_U_SHAPED") {
+            swiperDetailsTextPath = swiperAllDeisgnDetails[4];
+        }
+        else if (finalisedUrl === "mk_U_SHAPED") {
             selectedCatogary = mk_U_SHAPED_Images
             swiperHeadingText = "U-SHAPED MODULAR KITCHEN"
-        }else if (finalisedUrl === "mk_PARALLEL_MODULAR") {
+            swiperDetailsTextPath = swiperAllDeisgnDetails[6];
+        }
+        else if (finalisedUrl === "mk_PARALLEL_MODULAR") {
             selectedCatogary = mk_PARALLEL_MODULAR_Images
             swiperHeadingText = "PARALLEL MODULAR KITCHEN"
-        }else if (finalisedUrl === "fd_LCD") {
+            swiperDetailsTextPath = swiperAllDeisgnDetails[3];
+        }
+        else if (finalisedUrl === "fd_LCD") {
             selectedCatogary = fd_LCD_Images
             swiperHeadingText = "LCD PANEL DESIGNS"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[13];
         }else if (finalisedUrl === "fd_BATHROOM") {
             selectedCatogary = fd_BATHROOM_Images
             swiperHeadingText = "BATHROOM VANITY DESIGN MANUFACTURER"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[11];
         }else if (finalisedUrl === "fd_BED") {
             selectedCatogary = fd_BED_Images
             swiperHeadingText = "BED DESIGNS"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[8];
         }else if (finalisedUrl === "fd_SOFA") {
             selectedCatogary = fd_SOFA_Images
             swiperHeadingText = "SOFA SET DESIGN"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[15];
         }else if (finalisedUrl === "fd_DINING") {
             selectedCatogary = fd_DINING_Images
             swiperHeadingText = "DINING TABLE SET"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[14];
         }else if (finalisedUrl === "fd_STUDY") {
             selectedCatogary = fd_STUDY_Images
             swiperHeadingText = "STUDY TABLE DESIGN"
+            swiperDetailsTextPath = swiperAllDeisgnDetails[5];
         }
 
+        const swiperDetailsParaTextPromise = new Promise((resolve,reject)=>{
+
+            jQuery.get(swiperDetailsTextPath, function(data) {
+                if(!data){
+                    reject("Can't getting The Data");
+            }else{
+                resolve(data);
+            }
+           
+}, 'text');
+})
+  
+const DataDisplayer=async()=>{
+    swiperDetailsPara.innerHTML =  await swiperDetailsParaTextPromise;
+}
+
+DataDisplayer();
+
+
         swiperHeading.innerHTML = swiperHeadingText;
-        swiperDetailsPara.innerHTML = swiperDetailsParaText;
+        
 
         for (let i = 0; i < selectedCatogary.length; i++) {
             swiperWrapper.innerHTML += `<swiper-slide>
@@ -344,6 +444,14 @@ When designing an L-shaped modular kitchen, consider your specific needs, prefer
         </swiper-slide>`
         }
     </script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+ 
+</script>
+<script>
+      
+</script>
+   
 
 </body>
 
