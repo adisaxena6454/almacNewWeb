@@ -54,44 +54,7 @@
         @import url("css/color.css");
         @import url("css/font.css");
 
-        html,
-        body {
-            position: relative;
-            height: 99%;
-        }
-
-        body {
-            background: black;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-
-        swiper-container {
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-
-        swiper-slide {
-            background-position: center;
-            background-size: cover;
-            width: 600px;
-          border: 2px solid white;  
-            height: 400px;
-        }
-
-        .swiper-pagination-horizontal{
-            background: blue!important;
-        }
-
-        swiper-slide img {
-            display: block;
-            width: 100%;
-        }
-       
+              
     </style>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
@@ -137,8 +100,7 @@
         });
     </script>
 
-    <!-- swiper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    
     <script>
         
         let swiperWrapper = document.getElementById("mySwiper");
@@ -440,7 +402,7 @@ DataDisplayer();
         
 
         for (let i = 0; i < selectedCatogary.length; i++) {
-            swiperWrapper.innerHTML += `<swiper-slide>
+            swiperWrapper.innerHTML += `<swiper-slide class="swiper-slide-Photgallery">
           <img class="photoGalleryImage"  src='${selectedCatogary[i]}'/>
         </swiper-slide>`
         }

@@ -26,6 +26,7 @@
 .statistics-column {
     padding: 70px 40px 70px 40px;
     background-color: var(--color-secondary);
+    text-align: center;
 }
 .statistics-column:nth-child(1) {
     background-color: var(--color-primary);
@@ -76,6 +77,7 @@
     font-weight: 700;
     color: var(--color-primary);
     margin-bottom: 10px;
+    text-align: center;
 }
 .atbs-featured-module-5 .paragraph-text {
     color: var(--color-front);

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!-- Mirrored from bk-ninja.com/html_templates/interi/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 May 2023 08:27:16 GMT -->
 <!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /> <!-- /Added by HTTrack -->
 
 <head>
   <!-- Basic -->
@@ -11,11 +11,22 @@
   <meta name="keywords" content="HTML5 News Magazine Template" />
   <meta name="description" content="Infini - Ultimate News and Magazine Template" />
   <meta name="author" content="designuptodate.com" />
-  <!-- Jquery css -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-  </script>
+
+
   <!-- Tailwind css -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- owl carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Jquery css -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Daisy UI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -28,30 +39,31 @@
   <meta name="msapplication-TileImage" content="img/favicon.ico" />
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
-    @import url(css/atbs-style.css);
-    @import url(css/module/header.css);
-    @import url(css/module/footer.css);
-    @import url(css/module/heading-title.css);
-    @import url(css/module/atbs-featured-module-1.css);
-    @import url(css/module/atbs-featured-module-2.css);
-    @import url(css/module/atbs-featured-module-3.css);
-    @import url(css/module/atbs-featured-module-4.css);
-    @import url(css/module/atbs-featured-module-5.css);
-    @import url(css/module/atbs-featured-module-6.css);
-    @import url(css/module/atbs-featured-module-7.css);
-    @import url(css/module/atbs-posts-listing--grid-1.css);
-    @import url(css/module/atbs-posts-listing--grid-2.css);
-    @import url(css/module/atbs-posts-listing--grid-3.css);
-    @import url(css/module/service.css);
-    @import url(css/module/author.css);
-    @import url(css/module/search.css);
-    @import url(css/module/gallery.css);
-    @import url(css/module/404.css);
-    @import url(css/module/atbs-widget.css);
-    @import url(css/single.css);
-    @import url(css/color.css);
-    @import url(css/font.css);
+    @import url('css/atbs-style.css');
+    @import url('css/module/header.css');
+    @import url('css/module/footer.css');
+    @import url('css/module/heading-title.css');
+    @import url('css/module/atbs-featured-module-1.css');
+    @import url('css/module/atbs-featured-module-2.css');
+    @import url('css/module/atbs-featured-module-3.css');
+    @import url('css/module/atbs-featured-module-4.css');
+    @import url('css/module/atbs-featured-module-5.css');
+    @import url('css/module/atbs-featured-module-6.css');
+    @import url('css/module/atbs-featured-module-7.css');
+    @import url('css/module/atbs-posts-listing--grid-1.css');
+    @import url('css/module/atbs-posts-listing--grid-2.css');
+    @import url('css/module/atbs-posts-listing--grid-3.css');
+    @import url('css/module/service.css');
+    @import url('css/module/author.css');
+    @import url('css/module/search.css');
+    @import url('css/module/gallery.css');
+    @import url('css/module / 404.css');
+    @import url('css/module/atbs-widget.css');
+    @import url('css/single.css');
+    @import url('css/color.css');
+    @import url('css/font.css');
   </style>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
@@ -71,7 +83,9 @@
           <div class="section-main">
             <div class="intro-heading-text">
               <h3 class="intro-heading__title">
-                Bringing Life to your<span class="text-animation">Interiors </span> With Almac
+                Bringing Life to your<span class="text-animation">Interiors
+                </span>
+                With Almac
 
               </h3>
             </div>
@@ -81,19 +95,25 @@
               <div class="vision-text">
                 <span class="vision-label">RESIDENTIAL PROJECTS</span>
                 <h4 class="vision__heading">
-                  At Expert Home Interior Design, we're passionate about transforming houses into dream homes. With a wealth of experience and a keen eye for aesthetics, we specialize in crafting personalized, functional, and stylish interiors that reflect your unique tastes and needs.
+                  At Expert Home Interior Design, we're passionate about transforming houses into dream homes. With a
+                  wealth of experience and a keen eye for aesthetics, we specialize in crafting personalized,
+                  functional, and stylish interiors that reflect your unique tastes and needs.
                 </h4>
               </div>
               <div class="vision-text">
                 <span class="vision-label">OUR Team</span>
                 <h4 class="vision__heading">
-                  Our team of skilled designers and decorators takes pride in turning your vision into reality. From conceptualization to execution, we offer a wide range of interior design services, ensuring that every detail is carefully considered. We understand that a well-designed interior can enhance the quality of life, and that's what drives us to create inviting and harmonious spaces.
+                  Our team of skilled designers and decorators takes pride in turning your vision into reality. From
+                  conceptualization to execution, we offer a wide range of interior design services, ensuring that every
+                  detail is carefully considered. We understand that a well-designed interior can enhance the quality of
+                  life, and that's what drives us to create inviting and harmonious spaces.
                 </h4>
               </div>
               <div class="vision-text">
                 <span class="vision-label">MODULAR KITCHEN</span>
                 <h4 class="vision__heading">
-                  Mastering the art of modular kitchens, our team combines functionality and aesthetics seamlessly to create exquisite, space-efficient culinary spaces that redefine modern living.
+                  Mastering the art of modular kitchens, our team combines functionality and aesthetics seamlessly to
+                  create exquisite, space-efficient culinary spaces that redefine modern living.
                 </h4>
               </div>
             </div>
@@ -107,7 +127,8 @@
         <div class="flex-1">
           <p class="text-xl font-medium pb-7 primary-color">ABOUT US</p>
           <h1 class="min-[500px]:text-5xl text-white font-medium max-[500px]:text-3xl pb-9">
-            Creative solutions <br />
+            Creative solutions
+            <br />
             by professional<br />
             designers
           </h1>
@@ -144,7 +165,8 @@
         <div class="flex-1">
           <p class="text-xl font-medium pb-7 primary-color">HOW WE WORKS</p>
           <h1 class="text-4xl text-white font-medium pb-9">
-            Few easy steps to get<br /> interior design
+            Few easy steps to get<br />
+            interior design
           </h1>
         </div>
         <div class="flex-1">
@@ -165,7 +187,7 @@
               * Assess your kitchen space and determine the layout and design you want for your modular kitchen.<br />
               * Take accurate measurements of the kitchen area, including walls, windows, doors, electrical points,
               plumbing connections, and any other relevant features.
-              
+
             </p>
           </div>
         </div>
@@ -179,7 +201,7 @@
               accessories, and installation costs.<br />
               * Choose the materials you want for your kitchen cabinets, countertops, backsplash, flooring, and
               hardware. Common options include wood, laminate, stainless steel, granite, quartz, and more.
-              
+
             </p>
           </div>
         </div>
@@ -193,7 +215,7 @@
               kitchen.<br />
               * Decide on the cabinet layout, storage options, appliance placement, and other personalized features
               based on your needs and preferences.
-              
+
             </p>
           </div>
         </div>
@@ -206,7 +228,7 @@
               * Finalize your design and place an order for the modular kitchen components, including cabinets,
               countertops, and accessories, from a reputable supplier or manufacturer.<br />
               * Coordinate the delivery schedule to ensure the items arrive on time for installation.
-              
+
             </p>
           </div>
         </div>
@@ -222,7 +244,7 @@
               * Clear out your existing kitchen and remove any old cabinets, appliances, and fixtures.<br />
               * Make necessary repairs to walls, floors, plumbing, and electrical connections to ensure they are in good
               condition.
-              
+
             </p>
           </div>
         </div>
@@ -236,7 +258,7 @@
               measurements.<br />
               * Fit the countertops, backsplash, and other components as per the design.<br />
               * Install kitchen appliances such as the stove, refrigerator, dishwasher, and microwave.
-              
+
             </p>
           </div>
         </div>
@@ -250,7 +272,7 @@
               * Ensure electrical connections are made for lighting, outlets, and appliances, adhering to safety
               standards and regulations. It's advisable to hire a professional for this step if you're not experienced
               with electrical work.
-              
+
             </p>
           </div>
         </div>
@@ -263,65 +285,63 @@
               * Install the kitchen accessories, handles, knobs, and pulls.<br />
               * Make any necessary adjustments, alignments, or minor modifications to ensure everything fits and
               functions properly.<br />
-              
+
             </p>
           </div>
         </div>
       </div>
 
 
-
-
       <!-- Section 4 -->
-      <div class="atbs-block atbs-block--fullwidth atbs-featured-module-4">
-        <div class="container-fullwidth">
-          <div class="block-heading block-heading_style-1 block-heading--center">
-            <h4 class="block-heading__title">OUR WORKS</h4>
-            <div class="block-heading__subtitle">
-              We provide complete integration of interior design services, project management, and on-site execution.
-            </div>
-          </div>
-        </div>
-        <div class="container-fullwidth">
-          <div class="atbs-block__inner">
-            <div class="gallery-list flex-box flex-box-3i flex-space-30">
-              <div class="gallery-column">
-                <div class="img-field m-b-30" data-height="600">
-                  <img src="img/OurWork/4U0A7959a.jpg" alt="File not found" />
-                </div>
-                <div class="img-field" data-height="400">
-                  <img src="img/OurWork/4U0A8093a.jpg" alt="File not found" />
-                </div>
-              </div>
-              <div class="gallery-column">
-                <div class="img-field m-b-30" data-height="450">
-                  <img src="img/OurWork/4U0A8133A.jpg" alt="File not found" />
-                </div>
-                <div class="img-field m-b-30" data-height="220">
-                  <img src="img/OurWork/4U0A8183a.jpg" alt="File not found" />
-                </div>
-                <div class="img-field" data-height="300">
-                  <img src="img/OurWork/IMG20221211130158.jpg" alt="File not found" />
-                </div>
-              </div>
-              <div class="gallery-column">
-                <div class="img-field m-b-30" data-height="275">
-                  <img src="img/OurWork/IMG20221211134152.jpg" alt="File not found" />
-                </div>
-                <div class="img-field m-b-30" data-height="260">
-                  <img src="img/OurWork/IMG20221211143311.jpg" alt="File not found" />
-                </div>
-                <div class="img-field m-b-30" data-height="250">
-                  <img src="img/OurWork/IMG20221211133732.jpg" alt="File not found" />
-                </div>
-                <div class="img-field" data-height="155">
-                  <img src="img/OurWork/IMG20221211143701.jpg" alt="File not found" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- <div class="atbs-block atbs-block--fullwidth atbs-featured-module-4">
+                                        <div class="container-fullwidth">
+                                          <div class="block-heading block-heading_style-1 block-heading--center">
+                                            <h4 class="block-heading__title">OUR WORKS</h4>
+                                            <div class="block-heading__subtitle">
+                                              We provide complete integration of interior design services, project management, and on-site execution.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="container-fullwidth">
+                                          <div class="atbs-block__inner">
+                                            <div class="gallery-list flex-box flex-box-3i flex-space-30">
+                                              <div class="gallery-column">
+                                                <div class="img-field m-b-30" data-height="600">
+                                                  <img src="img/OurWork/4U0A7959a.jpg" alt="File not found" />
+                                                </div>
+                                                <div class="img-field" data-height="400">
+                                                  <img src="img/OurWork/4U0A8093a.jpg" alt="File not found" />
+                                                </div>
+                                              </div>
+                                              <div class="gallery-column">
+                                                <div class="img-field m-b-30" data-height="450">
+                                                  <img src="img/OurWork/4U0A8133A.jpg" alt="File not found" />
+                                                </div>
+                                                <div class="img-field m-b-30" data-height="220">
+                                                  <img src="img/OurWork/4U0A8183a.jpg" alt="File not found" />
+                                                </div>
+                                                <div class="img-field" data-height="300">
+                                                  <img src="img/OurWork/IMG20221211130158.jpg" alt="File not found" />
+                                                </div>
+                                              </div>
+                                              <div class="gallery-column">
+                                                <div class="img-field m-b-30" data-height="275">
+                                                  <img src="img/OurWork/IMG20221211134152.jpg" alt="File not found" />
+                                                </div>
+                                                <div class="img-field m-b-30" data-height="260">
+                                                  <img src="img/OurWork/IMG20221211143311.jpg" alt="File not found" />
+                                                </div>
+                                                <div class="img-field m-b-30" data-height="250">
+                                                  <img src="img/OurWork/IMG20221211133732.jpg" alt="File not found" />
+                                                </div>
+                                                <div class="img-field" data-height="155">
+                                                  <img src="img/OurWork/IMG20221211143701.jpg" alt="File not found" />
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div> -->
 
       <!-- Section 5 -->
       <div class="atbs-block atbs-block--fullwidth atbs-featured-module-5">
@@ -332,19 +352,45 @@
                 <div class="heading-info">
                   <h4 class="heading__name">Projects Completed</h4>
 
-                <div class="statistics-column">
-                  <div class="statistics-number">250+</div>
-                  <h4 class="statistics-label">PROJECT DONE</h4>
-                </div>
+                  <div class="statistics-column">
+                    <div class="statistics-number">250+</div>
+                    <h4 class="statistics-label">PROJECT DONE</h4>
                   </div>
                 </div>
-              <div class="column-right flex-box flex-box-2i">
-                <div class="img-field" data-height="400">
-                  <img src="img/OurWork/4U0A8093a.jpg" alt="File not found" />
-                </div>
-                <div class="img-field" data-height="400">
-                  <img src="img/OurWork/IMG20221211143311.jpg" alt="File not found" />
-                </div>
+              </div>
+              <div class="portfolio-swiper-container">
+                <swiper-container class="mySwiper" id="mySwiper" " pagination=" true" effect=" coverflow"
+                  grab-cursor=" true" centered-slides=" true" slides-per-view=" auto" coverflow-effect-rotate=" 50"
+                  coverflow-effect-stretch=" 0" coverflow-effect-depth=" 100" coverflow-effect-modifier=" 1"
+                  coverflow-effect-slide-shadows=" true">
+                  <swiper-slide class="swiper-slide-Portfolio">
+                    <img src="img/OurWork/4U0A7959a.jpg" alt="File not found" />
+                  </swiper-slide>
+                  <swiper-slide class="swiper-slide-Portfolio">
+                    <img src="img/OurWork/4U0A8093a.jpg" alt="File not found" />
+                  </swiper-slide>
+                  <swiper-slide class="swiper-slide-Portfolio">
+                    <img src="img/OurWork/IMG20221211134152.jpg" alt="File not found" />
+                  </swiper-slide>
+                  <swiper-slide class="swiper-slide-Portfolio">
+                    <img src="img/OurWork/4U0A8133A.jpg" alt="File not found" />
+                  </swiper-slide>
+                  <swiper-slide class="swiper-slide-Portfolio">
+                    <img src="img/OurWork/4U0A8183a.jpg" alt="File not found" />
+                  </swiper-slide>
+                  <swiper-slide class="swiper-slide-Portfolio">
+                    <img src="img/OurWork/IMG20221211130158.jpg" alt="File not found" />
+                  </swiper-slide>
+                  <swiper-slide class="swiper-slide-Portfolio">
+                    <img src="img/OurWork/IMG20221211143311.jpg" alt="File not found" />
+                  </swiper-slide>
+                  <swiper-slide class="swiper-slide-Portfolio">
+                    <img src="img/OurWork/IMG20221211133732.jpg" alt="File not found" />
+                  </swiper-slide>
+                  <swiper-slide class="swiper-slide-Portfolio">
+                    <img src="img/OurWork/IMG20221211143701.jpg" alt="File not found" />
+                  </swiper-slide>
+                </swiper-container>
               </div>
             </div>
           </div>
@@ -394,184 +440,225 @@
       </div>
 
       <!-- Section 7 -->
-      <div class="atbs-block atbs-block--fullwidth atbs-featured-module-7">
-        <div class="container-fullwidth">
-          <div class="block-heading block-heading_style-1 block-heading--center">
-            <h4 class="block-heading__title">WHAT PEOPLE SAY</h4>
-            <div class="block-heading__subtitle">
-          We din’t want to brag about it but this people says about our work.
+
+
+
+      <div class="testimonial-bg">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+
+            <div class="owl-item">
+              <div class="testimonial">
+                <p class="description">
+                  Finest possible job at the most affordable cost that is finished on schedule. We recently had our
+                  modular Kitchen, TV unit and wardrobes in Pu designed from scratch by almac modular kitchens. The
+                  job was completed with the utmost attention to detail and brings life to my home, starting with
+                  the initial site assessment and continuing with the submission of detailed, multi-dimensional
+                  drawings of the kitchen and wardrobe. Well I recommend almac
+                </p>
+                <div class="pic">
+                  <img src="img/x24.jpg.pagespeed.ic.bcjc47vvyh.jpg" alt="">
+                </div>
+                <h3 class="title">Sohan Bohra,</h3>
+                <span class="post">Client</span>
+              </div>
+
+
             </div>
+
           </div>
-        </div>
-        <div class="container-fullwidth">
-          <div class="atbs-block__inner">
-            <div class="testimonial-list flex-box flex-box-3i">
-              <div class="list-item">
-                <div class="testimonial-card">
-                  <div class="paragraph-text">
-                    <p>
-                      Finest possible job at the most affordable cost that is finished on schedule. We recently had our
-                      modular Kitchen, TV unit and wardrobes in Pu designed from scratch by almac modular kitchens. The
-                      job was completed with the utmost attention to detail and brings life to my home, starting with
-                      the initial site assessment and continuing with the submission of detailed, multi-dimensional
-                      drawings of the kitchen and wardrobe. Well I recommend almac
-                    </p>
-                  </div>
-                  <div class="testimonial-author">
-                    <div class="testimonial__image object-fit">
-                      <img src="img/x20.jpg.pagespeed.ic.NGvmO1Ej1J.jpg" alt="File not found" />
-                    </div>
-                    <div class="testimonial__text">
-                      <h5 class="testimonial__name">Sohan Bohra</h5>
-                      <span class="testimonial__bio">Client</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="list-item">
-                <div class="testimonial-card">
-                  <div class="paragraph-text">
-                    <p>
 
-                      Our kitchen's beauty has been enhanced many folds by engaging Almac Kitchen solutions. Virender
-                      Kaushik designed and executed the plan with finesse. He was always open for suggestions and gave
-                      best solutions.They are very professional and skilled....their involvement and customer friendly
-                      attitude has helped us build a kitchen that we desired. The work was not only completed in record
-                      time, but also our every requirement was carefully heard and cabinets planned accordingly. Well
-                      done Almac. Thanks a ton.
-                    </p>
-                  </div>
-                  <div class="testimonial-author">
-                    <div class="testimonial__image object-fit">
-                      <img src="img/x21.jpg.pagespeed.ic.vn3XgLXGP9.jpg" alt="File not found" />
-                    </div>
-                    <div class="testimonial__text">
-                      <h5 class="testimonial__name">Mukul Sharma</h5>
-                      <span class="testimonial__bio">Client</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="list-item">
-                <div class="testimonial-card">
-                  <div class="paragraph-text">
-                    <p>
-                      I recently had my kitchen renovated by Almac Modular Kitchens, and I'm thrilled with the results!
-                      From start to finish, the team was fantastic to work with. They took the time to listen to my
-                      needs and design preferences, and they offered great suggestions for maximizing the space and
-                      functionality of my kitchen.
+          <div class="item">
 
-                      The installation process was seamless and professional, and the final product is beautiful and
-                      high-quality. I couldn't be happier with the outcome!
+            <div class="owl-item">
+              <div class="testimonial">
+                <p class="description">
 
-                      If you're looking for a reliable and talented kitchen vendor, I highly recommend Almac Modular
-                      Kitchens. They exceeded my expectations in every way and delivered a kitchen that I absolutely
-                      love. Thank you, Almac Modular Kitchens!
-                    </p>
-                  </div>
-                  <div class="testimonial-author">
-                    <div class="testimonial__image object-fit">
-                      <img src="img/22.jpg.pagespeed.ce.6PqZYh7lu-.jpg" alt="File not found" />
-                    </div>
-                    <div class="testimonial__text">
-                      <h5 class="testimonial__name">Ritika Gupta</h5>
-                      <span class="testimonial__bio">Client</span>
-                    </div>
-                  </div>
+                  Our kitchen's beauty has been enhanced many folds by engaging Almac Kitchen solutions. Virender
+                  Kaushik designed and executed the plan with finesse. He was always open for suggestions and gave
+                  best solutions.They are very professional and skilled....their involvement and customer friendly
+                  attitude has helped us build a kitchen that we desired. The work was not only completed in record
+                  drawings of the kitchen and wardrobe. Well I recommend almac
+                </p>
+                <div class="pic">
+                  <img src="img/x24.jpg.pagespeed.ic.bcjc47vvyh.jpg" alt="">
                 </div>
+                <h3 class="title">Mukul Sharma,</h3>
+                <span class="post">Client</span>
               </div>
-              <div class="list-item">
-                <div class="testimonial-card">
-                  <div class="paragraph-text">
-                    <p>
-                      Would highly recommend using services of Mr. Kaushik from Almac kitchen. Design, build and quality
-                      of their modular kitchen is fabulous and it’s also priced economically. Our kitchen was installed
-                      6 months back and no issues so far from quality or fitting perspective.
-                    </p>
-                  </div>
-                  <div class="testimonial-author">
-                    <div class="testimonial__image object-fit">
-                      <img src="img/23.jpg.pagespeed.ce.p1N5XHWNn3.jpg" alt="File not found" />
-                    </div>
-                    <div class="testimonial__text">
-                      <h5 class="testimonial__name">Govind Malpani</h5>
-                      <span class="testimonial__bio">Client</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="list-item">
-                <div class="testimonial-card">
-                  <div class="paragraph-text">
-                    <p>
-                      Team at Almac is excellent. Mr Virendar Kaushik, owner of the company is very knowledgeable and
-                      customer centric person. He would advice you what is right and good for your property rather than
-                      what is easy for him.
-                      I am happy with their work and would recommend them strongly.
-                    </p>
-                  </div>
-                  <div class="testimonial-author">
-                    <div class="testimonial__image object-fit">
-                      <img src="img/x24.jpg.pagespeed.ic.bcjc47vvyh.jpg" alt="File not found" />
-                    </div>
-                    <div class="testimonial__text">
-                      <h5 class="testimonial__name">Amit Tyagi</h5>
-                      <span class="testimonial__bio">Client</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="list-item">
-                <div class="testimonial-card">
-                  <div class="paragraph-text">
-                    <p>
-                      We are satisfied with the work done for the modular kitchen and wardrobe by Almac. The quality and
-                      outcome of the product came out so well that it enhanced the ambience of our room and kitchen.
-                      Thanks
-                    </p>
-                  </div>
-                  <div class="testimonial-author">
-                    <div class="testimonial__image object-fit">
-                      <img src="img/x25.jpg.pagespeed.ic.whAufZwhHF.jpg" alt="File not found" />
-                    </div>
-                    <div class="testimonial__text">
-                      <h5 class="testimonial__name">Bharati Negi</h5>
-                      <span class="testimonial__bio">Client</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+
             </div>
+
           </div>
+
+          <div class="item">
+
+            <div class="owl-item">
+              <div class="testimonial">
+                <p class="description">
+                  I recently had my kitchen renovated by Almac Modular Kitchens, and I'm thrilled with
+                  the results!
+                  From start to finish, the team was fantastic to work with. They took the time to
+                  listen to my
+                  needs and design preferences, and they offered great suggestions for maximizing the
+                  space and
+                  functionality of my kitchen.
+
+                  The installation process was seamless and professional, and the final product is
+                  beautiful and
+                  high-quality. I couldn't be happier with the outcome!
+
+                  If you're looking for a reliable and talented kitchen vendor, I highly recommend
+                  Almac Modular
+                  Kitchens. They exceeded my expectations in every way and delivered a kitchen that I
+                  absolutely
+                  love. Thank you, Almac Modular Kitchens!
+                </p>
+                <div class="pic">
+                  <img src="img/x24.jpg.pagespeed.ic.bcjc47vvyh.jpg" alt="">
+                </div>
+                <h3 class="title">Ritika Gupta,</h3>
+                <span class="post">Client</span>
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+          <div class="item">
+
+            <div class="owl-item">
+              <div class="testimonial">
+                <p class="description">
+                  Would highly recommend using services of Mr. Kaushik from Almac kitchen. Design,
+                  build and quality
+                  of their modular kitchen is fabulous and it’s also priced economically. Our kitchen
+                  was installed
+                  6 months back and no issues so far from quality or fitting perspective.
+              
+                </p>
+                <div class="pic">
+                  <img src="img/x24.jpg.pagespeed.ic.bcjc47vvyh.jpg" alt="">
+                </div>
+                <h3 class="title">Govind Malpani,</h3>
+                <span class="post">Client</span>
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+
+          <div class="item">
+
+            <div class="owl-item">
+              <div class="testimonial">
+                <p class="description">
+                  Team at Almac is excellent. Mr Virendar Kaushik, owner of the company is very
+                  knowledgeable and
+                  customer centric person. He would advice you what is right and good for your
+                  property rather than
+                  what is easy for him.
+                  I am happy with their work and would recommend them strongly.
+             
+                </p>
+                <div class="pic">
+                  <img src="img/x24.jpg.pagespeed.ic.bcjc47vvyh.jpg" alt="">
+                </div>
+                <h3 class="title">Amit Tyagi,</h3>
+                <span class="post">Client</span>
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+
+          <div class="item">
+
+            <div class="owl-item">
+              <div class="testimonial">
+                <p class="description">
+                  We are satisfied with the work done for the modular kitchen and wardrobe by Almac.
+                  The quality and
+                  outcome of the product came out so well that it enhanced the ambience of our room
+                  and kitchen.
+                  Thanks
+                </p>
+                <div class="pic">
+                  <img src="img/x24.jpg.pagespeed.ic.bcjc47vvyh.jpg" alt="">
+                </div>
+                <h3 class="title">Bharati Negi,</h3>
+                <span class="post">Client</span>
+              </div>
+
+
+            </div>
+
+          </div>
+
         </div>
+
+
       </div>
 
 
+      <!-- .site-content -->
+      <div id="footer"></div>
+
+
     </div>
-    <!-- .site-content -->
-    <div id="footer"></div>
+    <!-- .site-wrapper -->
 
- 
-  </div>
-  <!-- .site-wrapper -->
-  
-  <script src="js/owl-carousel.min.js.pagespeed.jm.CUaR_y7pym.js"></script>
- 
-  <script>
-    let copyRightYearElem = document.getElementById("copyRightYear");
-    const date = new Date();
-    copyRightYearElem.innerText = date.getFullYear();
-  </script>
+    <script src="js/owl-carousel.min.js.pagespeed.jm.CUaR_y7pym.js"></script>
 
-<!-- //script for loading footer and navbar -->
-<script> 
-  $(function(){
-    $("#footer").load("Footer.html"); 
-     $("#sidebar").load("Sidebar.html"); 
-  });
-  </script> 
+    <script>
+      let copyRightYearElem = document.getElementById("copyRightYear");
+      const date = new Date();
+      if (date.getFullYear()) {
+        copyRightYearElem.innerText = date.getFullYear();
+      }
+    </script>
 
+    <!-- //script for loading footer and navbar -->
+
+    <script>
+      $(function () {
+        $("#footer").load("Footer.html");
+        $("#sidebar").load("Sidebar.html");
+      });
+
+      // slider tetimonials
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 1
+            },
+            1000: {
+              items: 1
+            }
+          }
+        })
+      });
+    </script>
 </body>
-
+</body>
 
 </html>
