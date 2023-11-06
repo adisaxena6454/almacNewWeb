@@ -12862,7 +12862,8 @@ font-size: 14px;
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
-    font-family: 'Poppins', serif;
+    font-family: 'Dancing Script', serif;
+        font-size: 19px;
  }
 
  html,
@@ -13035,6 +13036,22 @@ font-size: 14px;
     background-color: var(--background-primary)!important;
     width: 50px;
 
+}
+
+
+.fifteen-sec-popup{
+
+}
+.fifteen-sec-popup-active{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; 
+    backdrop-filter: blur(5px);
+    visibility: visible;
+   z-index: 99;
+   display: block;
 }
 
 

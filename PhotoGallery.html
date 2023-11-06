@@ -5,6 +5,10 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <!-- /Added by HTTrack -->
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
 <head>
     <!-- Basic -->
     <meta charset="UTF-8" />
@@ -83,7 +87,7 @@
     </div>
     <!-- .site-wrapper -->
 
-    <script src="js/owl-carousel.min.js.pagespeed.jm.CUaR_y7pym.js"></script>
+    <
 
     <script>
         let copyRightYearElem = document.getElementById("copyRightYear");
@@ -94,7 +98,7 @@
 
     <!-- //script for loading footer and navbar -->
     <script>
-        $(function () {
+        $(function(){
             $("#footer").load("Footer.html");
             $("#sidebar").load("Sidebar.html");
         });
@@ -102,7 +106,6 @@
 
     
     <script>
-        
         let swiperWrapper = document.getElementById("mySwiper");
         let swiperHeading = document.getElementById("swiperHeading");
         let swiperDetailsPara = document.getElementById("swiper-details-para");
@@ -382,7 +385,8 @@
         const swiperDetailsParaTextPromise = new Promise((resolve,reject)=>{
 
             jQuery.get(swiperDetailsTextPath, function(data) {
-                if(!data){
+
+            if(!data){
                     reject("Can't getting The Data");
             }else{
                 resolve(data);

@@ -344,6 +344,7 @@
                                       </div> -->
 
       <!-- Section 5 -->
+
       <div class="atbs-block atbs-block--fullwidth atbs-featured-module-5">
         <div class="atbs-block__inner">
           <div class="section-sub">
@@ -359,10 +360,10 @@
                 </div>
               </div>
               <div class="portfolio-swiper-container">
-                <swiper-container class="mySwiper" id="mySwiper" " pagination=" true" effect=" coverflow"
-                  grab-cursor=" true" centered-slides=" true" slides-per-view=" auto" coverflow-effect-rotate=" 50"
-                  coverflow-effect-stretch=" 0" coverflow-effect-depth=" 100" coverflow-effect-modifier=" 1"
-                  coverflow-effect-slide-shadows=" true">
+                <swiper-container class="mySwiper" id="mySwiper"" pagination=" true" effect="coverflow"
+                  grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
+                  coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1"
+                  coverflow-effect-slide-shadows="true">
                   <swiper-slide class="swiper-slide-Portfolio">
                     <img src="img/OurWork/4U0A7959a.jpg" alt="File not found" />
                   </swiper-slide>
@@ -442,6 +443,7 @@
       <!-- Section 7 -->
 
 
+      
 
       <div class="testimonial-bg">
         <div class="owl-carousel owl-theme">
@@ -462,8 +464,6 @@
                 <h3 class="title">Sohan Bohra,</h3>
                 <span class="post">Client</span>
               </div>
-
-
             </div>
 
           </div>
@@ -538,7 +538,7 @@
                   of their modular kitchen is fabulous and it’s also priced economically. Our kitchen
                   was installed
                   6 months back and no issues so far from quality or fitting perspective.
-              
+
                 </p>
                 <div class="pic">
                   <img src="img/x24.jpg.pagespeed.ic.bcjc47vvyh.jpg" alt="">
@@ -565,7 +565,7 @@
                   property rather than
                   what is easy for him.
                   I am happy with their work and would recommend them strongly.
-             
+
                 </p>
                 <div class="pic">
                   <img src="img/x24.jpg.pagespeed.ic.bcjc47vvyh.jpg" alt="">
@@ -608,9 +608,14 @@
 
 
       </div>
-
-
+ <!-- fifteen-sec-popup -->
+      <div class="fifteen-sec-popup" id="fifteen-sec-popup">
+        <div class="fifteen-sec-popup-card">
+          <h1>popup</h1>
+        </div>
+      </div>
       <!-- .site-content -->
+    
       <div id="footer"></div>
 
 
@@ -658,7 +663,17 @@
         })
       });
     </script>
-</body>
+
+<script>
+  let fifteen_sec_popup =  document.getElementById("fifteen-sec-popup");
+ 
+  setTimeout(()=>{
+   fifteen_sec_popup.classList.add("fifteen-sec-popup-active");
+   
+  },1000)
+ 
+     </script>
+
 </body>
 
 </html>
