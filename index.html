@@ -608,12 +608,7 @@
 
 
       </div>
- <!-- fifteen-sec-popup -->
-      <div class="fifteen-sec-popup" id="fifteen-sec-popup">
-        <div class="fifteen-sec-popup-card">
-          <h1>popup</h1>
-        </div>
-      </div>
+
       <!-- .site-content -->
     
       <div id="footer"></div>
@@ -646,7 +641,7 @@
           loop: true,
           margin: 10,
           nav: true,
-          autoplay: true,
+          autoplay: false,
           autoplayTimeout: 5000,
           autoplayHoverPause: true,
           responsive: {
@@ -667,10 +662,10 @@
 <script>
   let fifteen_sec_popup =  document.getElementById("fifteen-sec-popup");
  
-  setTimeout(()=>{
+  /* setTimeout(()=>{
    fifteen_sec_popup.classList.add("fifteen-sec-popup-active");
    
-  },1000)
+  },1000) */
  
      </script>
 

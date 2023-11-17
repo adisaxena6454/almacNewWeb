@@ -7395,7 +7395,8 @@ h3.atbs-line-limit.atbs-line-limit-4>a {
 .owl-carousel,
 .owl-carousel .owl-item {
     -webkit-tap-highlight-color: transparent;
-    position: relative
+    position: relative;
+    width: 100%;
 }
 
 .owl-carousel {
