@@ -44,7 +44,6 @@
     line-height: 1.5;
     font-weight: 400;
     color: var(--color-white-contrast-80);
-    text-transform: capitalize;
 }
 .navigation--footer li a:hover {
     color: var(--color-primary);

@@ -127,7 +127,8 @@
     font-size: 1.4rem;
     line-height: 1.4;
     font-weight: 700;
-    max-width: 300px;
+    max-width: 472px;
+    text-align: justify;
 }
 
 @media (max-width: 1440px) {
